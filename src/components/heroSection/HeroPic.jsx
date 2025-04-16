@@ -13,7 +13,7 @@ const HeroPic = () => {
     >
       <img
         src="../../public/images/portimage_prev_ui.png"
-        alt="Abdelrahman Qassem"
+        alt="Nduwuba chisom"
         className=">h-[500px] md:h-[700px] lg:h-[600px]  w-auto -mt-[60%]"
       />
 

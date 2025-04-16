@@ -8,35 +8,40 @@ const projects = [
     name: "regiscaje interiors",
     year: "Mar2022",
     align: "right",
-    image: "../../public/images/website-img-1.jpg",
+    image:
+      "https://res.cloudinary.com/dajtou6ym/image/upload/v1744804677/website-img-1_dedysb.jpg",
     link: "https://regiscajeinteriors.com/",
   },
   {
     name: "Our World international school",
     year: "Sept2022",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
+    image:
+      "https://res.cloudinary.com/dajtou6ym/image/upload/v1744804698/website-img-2_q32uue.webp",
     link: "https://ourworldintschool.ng/",
   },
   {
     name: "Chowdeck",
     year: "Jan2023",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
+    image:
+      "https://res.cloudinary.com/dajtou6ym/image/upload/v1744804690/website-img-3_pwwutv.jpg",
     link: "https://chowdeck.com/store",
   },
   {
     name: "Managai",
     year: "May2024",
     align: "left",
-    image: "../../public/images/website-img-4.jpg",
+    image:
+      "https://res.cloudinary.com/dajtou6ym/image/upload/v1744804705/website-img-4_itm7na.jpg",
     link: "https://www.managaihq.com/",
   },
   {
     name: "JobHunt",
     year: "May2024",
     align: "right",
-    image: "../../public/images/website-img-4.jpg",
+    image:
+      "https://res.cloudinary.com/dajtou6ym/image/upload/v1744804698/website-img-2_q32uue.webp",
     link: "https://job-portal-project-rho.vercel.app/",
   },
 ];
