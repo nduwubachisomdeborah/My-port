@@ -12,7 +12,7 @@ const HeroPic = () => {
       className=" h-full flex items-center justify-center "
     >
       <img
-        src="../../public/images/portimage_prev_ui.png"
+        src="https://res.cloudinary.com/dajtou6ym/image/upload/v1744806357/portimage_msudpd.png"
         alt="Nduwuba chisom"
         className=">h-[500px] md:h-[700px] lg:h-[600px]  w-auto -mt-[60%]"
       />

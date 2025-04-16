@@ -3,12 +3,13 @@ import { PiHexagonThin } from "react-icons/pi";
 const HeroImage = () => {
   return (
     <div className="relative self-end h-full w-full items-center justify-center">
-      <div className=" h-full w-full">
+      <div className=" ">
         <img
-          src="https://res.cloudinary.com/dajtou6ym/image/upload/e_sharpen,w_2000/portimage_msudpd.png"
+          src="https://res.cloudinary.com/dajtou6ym/image/upload/v1744806357/portimage_msudpd.png"
           alt="nduwuba chisom"
           className="w-auto h-auto md:max-w-[570px] sm:max-w-[380px] absolute bottom-[0px] z-10 left-[50%] -translate-x-[50%]"
         />
+
         <div className="w-full h-full absolute  bottom-[-20%] -z-10 flex justify-center items-center rotate-90">
           <PiHexagonThin className=" md:h-[90%] sm:h-[120%] min-h-[600px] w-auto text-orange opacity-70  animate-[spin_20s_linear_infinite] " />
         </div>
