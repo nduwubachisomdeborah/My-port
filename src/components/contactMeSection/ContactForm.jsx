@@ -1,11 +1,10 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [success, setSuccess] = useState("");
+
   const handleName = (e) => {
     setName(e.target.value);
   };
@@ -15,33 +14,24 @@ const ContactForm = () => {
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
-  const form = useRef();
-  const sendEmail = (e) => {
+
+  const sendToWhatsApp = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("service_ko3hmpt", "template_ahbmmqd", form.current, {
-        publicKey: "I6HAT5mUZH7WHabGE",
-      })
-      .then(
-        () => {
-          setEmail("");
-          setName("");
-          setMessage("");
-          setSuccess("Message Sent Succesfully");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+
+    // Fill with your WhatsApp details
+    const phoneNumber = "2348060039760";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      `Hello! My name is ${name}. \nEmail: ${email} \n\nMessage: ${message}`
+    )}`;
+
+    window.open(url, "_blank");
   };
 
   return (
     <div>
-      <p className="text-cyan">{success}</p>
-      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+      <form onSubmit={sendToWhatsApp} className="flex flex-col gap-4">
         <input
           type="text"
-          name="from_name"
           placeholder="Your Name"
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
@@ -50,7 +40,6 @@ const ContactForm = () => {
         />
         <input
           type="email"
-          name="from_email"
           placeholder="Your Email"
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
@@ -58,8 +47,6 @@ const ContactForm = () => {
           onChange={handleEmail}
         />
         <textarea
-          type="text"
-          name="message"
           rows="9"
           cols="50"
           placeholder="Collaboration Message"
@@ -72,7 +59,7 @@ const ContactForm = () => {
           type="submit"
           className="w-full rounded-lg border border-cyan text-white h-12 font-bold text-xl hover:bg-darkCyan bg-cyan transition-all duration-500"
         >
-          Send
+          Send to WhatsApp
         </button>
       </form>
     </div>
