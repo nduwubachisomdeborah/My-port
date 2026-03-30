@@ -1,11 +1,12 @@
 import { PiHexagonThin } from "react-icons/pi";
+import image2 from "../../assets/images/image2.png";
 
 const HeroImage = () => {
   return (
     <div className="relative self-end h-full w-full items-center justify-center">
       <div className=" ">
         <img
-          src="https://res.cloudinary.com/dajtou6ym/image/upload/v1744806357/portimage_msudpd.png"
+          src={image2}
           alt="nduwuba chisom"
           className="w-auto h-auto md:max-w-[570px] sm:max-w-[380px] absolute bottom-[0px] z-10 left-[50%] -translate-x-[50%]"
         />

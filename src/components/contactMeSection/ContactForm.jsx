@@ -62,7 +62,7 @@ const ContactForm = () => {
           name="message"
           rows="9"
           cols="50"
-          placeholder="Message"
+          placeholder="Collaboration Message"
           required
           className=" rounded-lg bg-lightBrown p-2"
           value={message}

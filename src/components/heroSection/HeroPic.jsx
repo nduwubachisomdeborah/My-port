@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import { PiHexagonThin } from "react-icons/pi";
+import suitport from "../../assets/images/image2.png";
 
 const HeroPic = () => {
   return (
@@ -12,9 +13,9 @@ const HeroPic = () => {
       className=" h-full flex items-center justify-center "
     >
       <img
-        src="https://res.cloudinary.com/dajtou6ym/image/upload/v1744806357/portimage_msudpd.png"
+        src={suitport}
         alt="Nduwuba chisom"
-        className=">h-[500px] md:h-[700px] lg:h-[600px]  w-auto -mt-[60%]"
+        className="h-[400px] md:h-[700px] lg:h-[600px]  w-auto -mt-[20%]"
       />
 
       <div className=" absolute -z-10 flex justify-center items-center animate-pulse ">
@@ -23,5 +24,6 @@ const HeroPic = () => {
     </motion.div>
   );
 };
+
 
 export default HeroPic;
